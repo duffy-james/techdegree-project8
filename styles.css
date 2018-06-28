@@ -6,6 +6,8 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url("svgs/background.svg");;
+  background-repeat: repeat;
 }
 
 #container {
@@ -59,4 +61,41 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/* Navigation for the page */
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 1.5em;
+}
+
+nav ul li a:hover {
+  color: #F9F871;
+  fill: #F9F871;
+}
+
+.nav-img {
+  width: 25px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.st0 {
+  fill: #39ADD1;
+}
+.st0:hover {
+  fill: #F9F871;
+}
+
+/* media queries */
+
+@media (max-width: 728px) {
+    nav ul {
+      flex-direction: column;
+    }
 }
