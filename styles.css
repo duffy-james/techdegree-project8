@@ -68,15 +68,15 @@ footer {
 nav ul {
   display: flex;
   list-style-type: none;
+  flex-direction: column;
 }
 
 nav ul li {
   padding: 1.5em;
 }
 
-nav ul li a:hover {
+nav ul li:hover a {
   color: #F9F871;
-  fill: #F9F871;
 }
 
 .nav-img {
@@ -85,17 +85,43 @@ nav ul li a:hover {
   vertical-align: middle;
 }
 
-.st0 {
+path {
   fill: #39ADD1;
 }
-.st0:hover {
-  fill: #F9F871;
+
+nav ul li:hover path {
+  fill: #F9F871;;
 }
+
+/* Logo */
+
+#logo {
+  width: 140px;
+  height: 120px;
+}
+
+.st1 {
+  display: none;
+}
+
+.logoText {
+  display: inline-block;
+}
+
 
 /* media queries */
 
-@media (max-width: 728px) {
+@media (min-width: 728px) {
     nav ul {
-      flex-direction: column;
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 425px) {
+    .st1 {
+      display: inline-block;
+    }
+    .logoText {
+      display: none;
     }
 }
