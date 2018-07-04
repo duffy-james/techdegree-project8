@@ -100,14 +100,73 @@ nav ul li:hover path {
   height: 120px;
 }
 
+.st0 {
+  fill: #BA8058;
+}
+
 .st1 {
   display: none;
+  fill: #EAAA7F;
+}
+
+.st2 {
+  fill: #F4C6A6;
 }
 
 .logoText {
   display: inline-block;
 }
 
+/* Corgi images on the page */
+
+.corgiExample {
+  display: none;
+}
+
+.corgiContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.corgis {
+  width: 200px;
+  height: 200px;
+  margin: 15px auto;
+}
+
+.body {
+  fill: currentColor;
+}
+
+.nose_and_eyes {
+  fill: #2D3339;
+}
+.brows {
+  fill: #DA8058;
+}
+.white {
+  fill: #FBFEFF;
+}
+
+.corgiOne {
+  color: #A67B5B;
+}
+
+.corgiTwo {
+  color: #FFDEAD;
+}
+
+.corgiThree {
+  color: #8B4513;
+}
+
+.corgiFour {
+  color: #52595F;
+}
+
+.corgiText {
+  fill: #ba8058;
+}
 
 /* media queries */
 
@@ -115,10 +174,16 @@ nav ul li:hover path {
     nav ul {
       flex-direction: row;
     }
+    .corgiContainer {
+      flex-direction: row;
+      padding: 0 8%;
+    }
 }
 
 @media (min-width: 425px) {
-    .st1 {
+    .corgis {
+      width: 170px;
+      height: 170px;
       display: inline-block;
     }
     .logoText {
