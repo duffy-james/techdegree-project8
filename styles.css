@@ -81,16 +81,20 @@ nav ul li:hover a {
 
 .nav-img {
   width: 25px;
-  padding-right: 5px;
+  padding-right: 15px;
   vertical-align: middle;
+  overflow: visible;
 }
 
 path {
   fill: #39ADD1;
+  transition: transform .5s ease-in;
+  transform-origin: 50% 50%;
 }
 
 nav ul li:hover path {
-  fill: #F9F871;;
+  fill: #F9F871;
+  transform: scale(1.5);
 }
 
 /* Logo */
@@ -98,6 +102,12 @@ nav ul li:hover path {
 #logo {
   width: 140px;
   height: 120px;
+  transition: transform .5s ease-in;
+  overflow: visible;
+}
+
+#logo:hover {
+  transform: scale(1.3);
 }
 
 .st0 {
@@ -129,9 +139,10 @@ nav ul li:hover path {
 }
 
 .corgis {
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 210px;
   margin: 15px auto;
+  overflow: visible;
 }
 
 .body {
@@ -164,6 +175,21 @@ nav ul li:hover path {
   color: #52595F;
 }
 
+.corgiOne,
+.corgiTwo,
+.corgiThree,
+.corgiFour {
+  transition: transform .5s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.corgiOne:hover,
+.corgiTwo:hover,
+.corgiThree:hover,
+.corgiFour:hover {
+  transform: rotate(20deg);
+}
+
 .corgiText {
   fill: #ba8058;
 }
@@ -188,5 +214,8 @@ nav ul li:hover path {
     }
     .logoText {
       display: none;
+    }
+    .st1 {
+      display: inline-block;
     }
 }
